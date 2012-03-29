@@ -236,7 +236,7 @@ main(void)
 {
 	kuvat = calloc(5, sizeof(SDL_Surface));
 	if (kuvat == NULL) {
-		err
+		err(1, "muistin varaus kuville epäonnistui");		
 	}
 	alusta_pallot();
 	suunta = 1;
